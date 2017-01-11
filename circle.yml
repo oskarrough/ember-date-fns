@@ -1,0 +1,21 @@
+machine:
+  pre:
+    - mkdir ~/.yarn-cache
+  node:
+    version: "stable"
+
+dependencies:
+  pre:
+    - curl -o- -L https://yarnpkg.com/install.sh | bash
+    - yarn global add bower
+  cache_directories:
+    - ~/.yarn
+    - ~/.yarn-cache
+  override:
+    - yarn install
+  post:
+    - bower install
+
+test:
+  override:
+    - yarn test
