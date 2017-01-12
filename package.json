@@ -1,16 +1,14 @@
 {
   "name": "ember-date-fns",
   "version": "0.1.0",
-  "description": "Ember helpers with date-fns",
+  "description": "Date helpers for Ember.js using date-fns",
   "keywords": [
     "ember-addon",
     "date",
     "date-fns"
   ],
   "license": "MIT",
-  "author": "",
   "directories": {
-    "doc": "doc",
     "test": "tests"
   },
   "repository": "",
