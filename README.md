@@ -15,16 +15,21 @@ In your ember-cli project, run either
 or
 
 `npm install ember-date-fns --save-dev`
+  
+## Available helpers
 
-## How to use
+All helpers map to the date-fns function of the same name.
 
-Now you'll have the following helpers available.
++ [`date-format`](#date-format)
+
+## Usage
+
+### `date-format`
+Like any date-fns method accepts both a date object, string or timestamp.  [Docs](https://date-fns.org/docs/format).
 
 ```hbs
 {{date-format date "D. MMM YYYY"}}
 ```
-
-It accepts both a date object, string or timestamp. See https://date-fns.org/docs/format.
 
 ## Contributing
 
@@ -32,8 +37,7 @@ The idea with this project is to expose the most useful date-fns helpers as Embe
 
 * `git clone <repository-url>` this repository
 * `cd ember-date-fns`
-* `npm install`
+* `yarn`
 * `bower install`
-* `npm test`
-* `npm start`
-
+* `yarn test`
+* `yarn start`
