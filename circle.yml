@@ -1,4 +1,6 @@
 machine:
+  environment:
+    PATH: "${PATH}:${HOME}/.yarn/bin:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
   pre:
     - mkdir ~/.yarn-cache
   node:
@@ -6,13 +8,17 @@ machine:
 
 dependencies:
   pre:
-    - curl -o- -L https://yarnpkg.com/install.sh | bash
+    - |
+      if [[ ! -e ~/.yarn/bin/yarn ]]; then
+        curl -o- -L https://yarnpkg.com/install.sh | bash
+      fi
+    # - curl -o- -L https://yarnpkg.com/install.sh | bash
     - yarn global add bower
   cache_directories:
     - ~/.yarn
     - ~/.yarn-cache
   override:
-    - yarn install
+    - yarn
   post:
     - bower install
 
