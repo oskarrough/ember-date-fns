@@ -14,21 +14,29 @@ In your ember-cli project, run either
 
 or
 
-`npm install ember-date-fns --save-dev`
+`npm install ember-date-fns --save`
   
 ## Available helpers
 
 All helpers map to the date-fns function of the same name.
 
 + [`date-format`](#date-format)
++ [`date-from-now`](#date-from-now)
 
 ## Usage
 
 ### `date-format`
-Like any date-fns method accepts both a date object, string or timestamp.  [Docs](https://date-fns.org/docs/format).
+Like any date-fns method accepts both a date object, string or timestamp. [Docs](https://date-fns.org/docs/format).
 
 ```hbs
 {{date-format date "D. MMM YYYY"}}
+```
+
+### `date-from-now`
+Uses [distanceInWordsToNow](https://date-fns.org/docs/distanceInWordsToNow) to return "time ago". By default no suffix is added.
+
+```hbs
+{{date-from-now date addSuffix=true}}
 ```
 
 ## Contributing
@@ -41,3 +49,4 @@ The idea with this project is to expose the most useful date-fns helpers as Embe
 * `bower install`
 * `yarn test`
 * `yarn start`
+
