@@ -26,13 +26,15 @@ All helpers map to the date-fns function of the same name.
 ## Usage
 
 ### `date-format`
-Like any date-fns method accepts both a date object, string or timestamp. [Docs](https://date-fns.org/docs/format).
+
+Uses [format](https://date-fns.org/docs/format) to format a date object, string or timestamp.
 
 ```hbs
 {{date-format date "D. MMM YYYY"}}
 ```
 
 ### `date-from-now`
+
 Uses [distanceInWordsToNow](https://date-fns.org/docs/distanceInWordsToNow) to return "time ago". By default no suffix is added.
 
 ```hbs
@@ -43,7 +45,7 @@ Uses [distanceInWordsToNow](https://date-fns.org/docs/distanceInWordsToNow) to r
 
 The idea with this project is to expose the most useful date-fns helpers as Ember helpers. Currently only `format` is supported. Helpers will follow the format `date-helper-name`.
 
-* `git clone <repository-url>` this repository
+* `git clone git@github.com:oskarrough/ember-date-fns.git` 
 * `cd ember-date-fns`
 * `yarn`
 * `bower install`
