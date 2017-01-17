@@ -1,7 +1,12 @@
 import Ember from 'ember';
 
-export default Ember.Controller.extend({
-  today: Ember.computed('', function () {
+const {Controller, computed} = Ember;
+
+export default Controller.extend({
+  today: computed('', function () {
     return new Date();
+  }),
+  lastChristmas: computed('', function () {
+    return new Date('2016-12-24');
   })
 });
