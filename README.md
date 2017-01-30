@@ -10,11 +10,13 @@ If you are looking for more features, this is not yet the place. See [ember-mome
 
 In your ember-cli project, run either
 
-`yarn add ember-date-fns`
+`yarn add ember-date-fns ember-browserify`
 
 or
 
-`npm install ember-date-fns --save`
+`npm install ember-date-fns ember-browserify --save`
+
+Note: ember-browserify must be installed as well.
   
 ## Available helpers
 
