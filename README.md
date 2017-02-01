@@ -2,9 +2,9 @@
 
 [![CircleCI](https://circleci.com/gh/oskarrough/ember-date-fns.svg?style=svg)](https://circleci.com/gh/oskarrough/ember-date-fns)
 
-Date helpers for your ember-cli application thanks to [date-fns](https://date-fns.org/). If all you need is to format a date, Ember date-fns will help you.
+Lightweight date helpers for your ember-cli application thanks to [date-fns](https://date-fns.org/). If all you need is to format a date, Ember date-fns will help you.
 
-If you are looking for more features, this is not yet the place. See [ember-moment](https://github.com/stefanpenner/ember-moment). But know that moment.js alone adds 2-300 kb to your application whereas date-fns is a few kb.
+If you are looking for more features, see [ember-moment](https://github.com/stefanpenner/ember-moment) instead.
 
 ## Installation
 
