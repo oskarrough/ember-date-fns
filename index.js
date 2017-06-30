@@ -1,8 +1,6 @@
-/* jshint node: true */
 'use strict';
 
 const WebpackDependencyPlugin = require('./lib/webpack-dependency-plugin');
-
 
 module.exports = {
   name: 'ember-date-fns',
@@ -18,6 +16,6 @@ module.exports = {
           'date-fns/format',
           'date-fns/distance_in_words_to_now',
         ]
-      });
+    });
   }
 };
