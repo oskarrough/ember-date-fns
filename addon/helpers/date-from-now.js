@@ -5,7 +5,7 @@ import distanceInWordsToNow from 'date-fns/distance_in_words_to_now';
 export function dateFromNow([date], options) {
   options = options || {};
   let dateFromNow = distanceInWordsToNow(date, options);
-	return `${dateFromNow}`;
+  return `${dateFromNow}`;
 }
 
 export default Ember.Helper.helper(dateFromNow);

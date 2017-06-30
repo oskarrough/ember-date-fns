@@ -12,10 +12,10 @@ module.exports = {
   treeForVendor() {
     return new WebpackDependencyPlugin({
       outputName: 'ember-date-fns',
-        expose: [
-          'date-fns/format',
-          'date-fns/distance_in_words_to_now',
-        ]
+      expose: [
+        'date-fns/format',
+        'date-fns/distance_in_words_to_now',
+      ]
     });
   }
 };

@@ -9,5 +9,6 @@ module.exports = {
     node: true
   },
   rules: {
+    indent: ['error', 2]
   }
 };
