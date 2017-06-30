@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import format from 'npm:date-fns/format';
+import format from 'date-fns/format';
 
 // Give it a date string or object first,
 // and a string to format it.
