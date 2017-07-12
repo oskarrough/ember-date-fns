@@ -1,5 +1,6 @@
 'use strict';
 
+const createUniqueArray = require(`./lib/create-unique-array`);
 const WebpackDependencyPlugin = require('./lib/webpack-dependency-plugin');
 
 module.exports = {
@@ -19,14 +20,16 @@ module.exports = {
     this.includedDateFns = config.includedDateFns || [];
   },
   treeForVendor() {
-    const exposedFunctions = [
+    const exposedFunctionNames = [
       'format',
       'distance_in_words_to_now'
     ].concat(this.includedDateFns);
 
+    const expose = createUniqueArray(exposedFunctionNames).map(name => `date-fns/${name}`);
+
     return new WebpackDependencyPlugin({
       outputName: 'ember-date-fns',
-      expose: exposedFunctions.map(name => `date-fns/${name}`)
+      expose,
     });
   }
 };
