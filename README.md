@@ -1,5 +1,6 @@
 # Ember date-fns
 
+[![npm version](https://badge.fury.io/js/ember-date-fns.svg)](https://badge.fury.io/js/ember-date-fns)
 [![CircleCI](https://circleci.com/gh/oskarrough/ember-date-fns.svg?style=svg)](https://circleci.com/gh/oskarrough/ember-date-fns)
 
 Lightweight date helpers for your ember-cli application thanks to [date-fns](https://date-fns.org/). If all you need is to format a date, Ember date-fns will help you.
