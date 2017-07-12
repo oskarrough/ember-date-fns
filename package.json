@@ -8,6 +8,18 @@
     "date-fns"
   ],
   "license": "MIT",
+  "author": {
+    "name": "Oskar Rough",
+    "email": "oskar@rough.dk",
+    "url": "https://github.com/oskarrough"
+  },
+  "contributors": [
+    {
+      "name": "Laurin Quast",
+      "email": "laurinquast@googlemail.com",
+      "url": "https://github.com/n1ru4l"
+    }
+  ],
   "directories": {
     "test": "tests"
   },
