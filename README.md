@@ -1,5 +1,6 @@
 # Ember date-fns
 
+[![npm version](https://badge.fury.io/js/ember-date-fns.svg)](https://badge.fury.io/js/ember-date-fns)
 [![CircleCI](https://circleci.com/gh/oskarrough/ember-date-fns.svg?style=svg)](https://circleci.com/gh/oskarrough/ember-date-fns)
 
 Lightweight date helpers for your ember-cli application thanks to [date-fns](https://date-fns.org/). If all you need is to format a date, Ember date-fns will help you.
@@ -41,6 +42,35 @@ Uses [distanceInWordsToNow](https://date-fns.org/docs/distanceInWordsToNow) to r
 
 ```hbs
 {{date-from-now date addSuffix=true}}
+```
+
+### Exposing additional date-fns
+
+`date-fns` provides many functions for manipulating dates. In order to reduce bundle size only `date-fns/distance_in_words_to_now` and `date-fns/format` are included by default. However you can include more functions by listing them in your `ember-cli-build.js`.
+
+Example:
+
+```javascript
+// ember-cli-build.js
+
+const app = new EmberAddon(defaults, {
+  'ember-date-fns': {
+    includedDateFns: [
+      'end_of_day',
+    ],
+  }
+});
+```
+
+This will allow you to import the `endOfDay` function anywhere in your ember application:
+
+```javascript
+// app/components/sum-component.js
+
+import Ember from 'ember';
+import endOfDay from 'data-fns/end_of_day';
+
+// Your component code here...
 ```
 
 ## Contributing

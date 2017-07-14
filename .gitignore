@@ -13,5 +13,6 @@
 /connect.lock
 /coverage/*
 /libpeerconnection.log
+/.idea
 npm-debug.log*
 testem.log

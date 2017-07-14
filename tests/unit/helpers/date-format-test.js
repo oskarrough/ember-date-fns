@@ -1,4 +1,3 @@
-
 import { dateFormat } from 'dummy/helpers/date-format';
 import { module, test } from 'qunit';
 
