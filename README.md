@@ -15,7 +15,7 @@ In your ember-cli project, run either
 
 or
 
-`yarn install ember-date-fns`
+`yarn add ember-date-fns`
 
 or
 
