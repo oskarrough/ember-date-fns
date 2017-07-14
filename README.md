@@ -11,14 +11,17 @@ If you are looking for more features, see [ember-moment](https://github.com/stef
 
 In your ember-cli project, run either
 
-`yarn add ember-date-fns ember-browserify`
+`ember install ember-date-fns`
 
 or
 
-`npm install ember-date-fns ember-browserify --save`
+`yarn install ember-date-fns`
 
-Note: ember-browserify must be installed as well.
-  
+or
+
+`npm install --save ember-date-fns`
+
+
 ## Available helpers
 
 All helpers map to the date-fns function of the same name.
@@ -76,11 +79,11 @@ import endOfDay from 'data-fns/end_of_day';
 ## Contributing
 
 The idea with this project is to expose the most useful date-fns helpers as Ember helpers. Currently only `format` is supported. Helpers will follow the format `date-helper-name`.
+If there is a `date-fn` you would like to see as a helper feel free to open a Pull Request :)
 
 * `git clone git@github.com:oskarrough/ember-date-fns.git` 
 * `cd ember-date-fns`
 * `yarn`
-* `bower install`
 * `yarn test`
 * `yarn start`
 
