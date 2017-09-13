@@ -71,7 +71,7 @@ This will allow you to import the `endOfDay` function anywhere in your ember app
 // app/components/sum-component.js
 
 import Ember from 'ember';
-import endOfDay from 'data-fns/end_of_day';
+import endOfDay from 'date-fns/end_of_day';
 
 // Your component code here...
 ```
