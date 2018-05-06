@@ -12,15 +12,11 @@ dependencies:
       if [[ ! -e ~/.yarn/bin/yarn ]]; then
         curl -o- -L https://yarnpkg.com/install.sh | bash
       fi
-    # - curl -o- -L https://yarnpkg.com/install.sh | bash
-    - yarn global add bower
   cache_directories:
     - ~/.yarn
     - ~/.yarn-cache
   override:
     - yarn
-  post:
-    - bower install
 
 test:
   override:
