@@ -10,6 +10,6 @@ test('it works', function (assert) {
 
 test('you can include a suffix', function (assert) {
   let result = dateFromNow([1481022124443], {addSuffix: true});
-  assert.ok(result.indexOf(' ago') > -1);
+  assert.ok(result.includes(' ago'));
 });
 
