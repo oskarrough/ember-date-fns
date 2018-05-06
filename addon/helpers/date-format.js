@@ -1,4 +1,4 @@
-import Ember from 'ember';
+import { helper } from '@ember/component/helper';
 import format from 'date-fns/format';
 
 // Give it a date string or object first,
@@ -10,5 +10,4 @@ export function dateFormat(params) {
   return format(date, formatString);
 }
 
-export default Ember.Helper.helper(dateFormat);
-
+export default helper(dateFormat);
