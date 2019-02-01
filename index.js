@@ -5,8 +5,7 @@ module.exports = {
 
   options: {
     autoImport: {
-      exclude: [],
-      webpack: { }
+      exclude: []
     }
   }
 };
